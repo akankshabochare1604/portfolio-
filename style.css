@@ -1,0 +1,242 @@
+
+        body {
+            background-color: #7FB3D5; /* Muted Teal for the page background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            background-color: #e8daef; /* Light purple background for the hero section */
+            color: #4A235A; /* Dark purple text color */
+            text-align: center;
+            padding: 100px 20px;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            position: relative;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .hero button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #FADADD; /* Soft Pastel Pink for the button */
+            color: #4A235A; /* Dark purple text color for the button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #E6B0AA; /* Slightly darker pink for hover effect */
+        }
+
+        #about {
+            padding: 80px 0;
+            background-color: #FADADD; /* Soft Pastel Pink for the section background */
+        }
+
+        .profile-img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        .about-content .btn {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #7FB3D5; /* Muted Teal for the button background */
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .col-md-6 {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #projects {
+            padding: 80px 0;
+            background-color: #ADD8E6; /* Light blue background for the projects section */
+            color: #4A235A; /* Dark purple text color */
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #F5B7B1; /* Light pastel color for the project container */
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .project img {
+            width: 200px; /* Fixed width for project images */
+            height: auto; /* Maintain aspect ratio */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        .project-content {
+            flex: 1;
+            padding-left: 20px;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        .project h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        .project p {
+            font-size: 16px;
+            line-height: 1.6;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        .project a {
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #7FB3D5; /* Muted Teal for the button background */
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        .project a:hover {
+            background-color: #5499C7; /* Slightly darker teal for hover effect */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        #contact {
+            padding: 80px 0;
+            background-color: #FADADD; /* Soft Pastel Pink for the section background */
+            color: #4A235A; /* Dark purple text color */
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-icons a {
+            color: #4A235A; /* Dark purple */
+            font-size: 32px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-icons a:hover {
+            color: #5499C7; /* Slightly darker teal for hover effect */
+        }
+
+    /* Styles for contact form */
+#contact {
+    padding: 80px 0;
+    background-color: #FADADD; /* Soft Pastel Pink for the section background */
+    color: #4A235A; /* Dark purple text color */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Hidden contact form */
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Show contact form when triggered */
+.visible {
+    opacity: 1;
+}
